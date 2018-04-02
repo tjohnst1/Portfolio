@@ -1,0 +1,16 @@
+@import 'vars';
+
+.hero {
+  padding: 2rem 0;
+  width: 66%;
+}
+
+.hero__text {
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 5rem;
+
+  & .link {
+    color: $red;
+  }
+}
