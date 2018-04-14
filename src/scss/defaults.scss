@@ -19,6 +19,24 @@ body {
   font-weight: 400;
 }
 
+a {
+  color: $red;
+  transition: color 300ms;
+  text-decoration: none;
+
+  &:hover {
+    color: $red--hover;
+  }
+
+  &:visited {
+    color: $red;
+
+    &:hover {
+      color: $red--hover;
+    }
+  }
+}
+
 .container {
   width: 95%;
   margin: 0 auto;

@@ -12,8 +12,8 @@ const Header = () => {
         </div>
         <nav>
           <ul>
-            <li>Work</li>
-            <li>Contact</li>
+            <li><a href="#">Work</a></li>
+            <li><a href="mailto: tjohnst1@gmail.com">Contact</a></li>
           </ul>
         </nav>
       </div>

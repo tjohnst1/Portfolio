@@ -10,24 +10,28 @@ const Hero = () => (
           <div>
             <img />
             <h3>A Cart Apart</h3>
+            <p>React / HTML / SASS / Firebase / Google Maps API</p>
           </div>
         </div>
         <div className="featured-work__item">
           <div>
             <img />
             <h3>Makani</h3>
+            <p>Web Development / Design</p>
           </div>
         </div>
         <div className="featured-work__item">
           <div>
             <img />
             <h3>Out to Lunch</h3>
+            <p>Web Development / Design</p>
           </div>
         </div>
         <div className="featured-work__item">
           <div>
             <img />
             <h3>React Paint</h3>
+            <p>Web Development / Design</p>
           </div>
         </div>
       </div>
