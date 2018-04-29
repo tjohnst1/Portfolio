@@ -9,7 +9,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .featured-work__headline {
@@ -23,14 +23,24 @@
 .featured-work__item {
   width: 50%;
   text-align: center;
+  padding: 1rem;
 
-  & div {
-    background-color: white;
-    width: 95%;
-    margin: 0 auto;
+  &:nth-of-type(odd) {
+    padding-left: 0;
+  }
+
+  &:nth-of-type(even) {
+    padding-right: 0;
   }
 
   & * {
     width: 100%;
+    margin: 0;
   }
+
+}
+
+.featured-work__item-inner {
+  background-color: white;
+  padding: 1rem;
 }

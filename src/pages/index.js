@@ -4,12 +4,31 @@ import Hero from '../components/Hero';
 import Footer from '../components/Footer';
 import FeaturedWork from '../components/FeaturedWork';
 
-const IndexPage = () => (
-  <div>
-    <Hero />
-    <FeaturedWork />
-    <Footer />
-  </div>
-)
+export default ({ data }) => {
+  const { projects } = data.allDataJson.edges[0].node;
+  return (
+    <div>
+      <Hero />
+      <FeaturedWork projects={projects} />
+      <Footer />
+    </div>
+  )
+}
 
-export default IndexPage
+export const query = graphql`
+  query FeaturedWorkQuery {
+  	allDataJson {
+  	  edges {
+  	    node {
+          projects {
+            name
+            category
+            summary
+            category
+            technologies
+          }
+        }
+  	  }
+  	}
+  }
+`;
