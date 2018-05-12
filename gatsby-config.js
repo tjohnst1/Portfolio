@@ -8,9 +8,9 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem' ,
       options: {
-        name: 'data' ,
-        path: `${__dirname}/src/data`,
-      },
+        name: 'data',
+        path: `${__dirname}/data`,
+      }
     },
     'gatsby-transformer-json',
     'gatsby-plugin-react-helmet',

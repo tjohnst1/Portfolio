@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 import FeaturedWork from '../components/FeaturedWork';
 
 export default ({ data }) => {
-  const { projects } = data.allDataJson.edges[0].node;
+  const projects = data.allProjectsJson.edges;
   return (
     <div>
       <Hero />
@@ -17,16 +17,14 @@ export default ({ data }) => {
 
 export const query = graphql`
   query FeaturedWorkQuery {
-  	allDataJson {
+  	allProjectsJson {
   	  edges {
   	    node {
-          projects {
-            name
-            category
-            summary
-            category
-            technologies
-          }
+          name
+          category
+          summary
+          category
+          technologies
         }
   	  }
   	}
