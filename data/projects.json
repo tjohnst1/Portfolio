@@ -13,54 +13,82 @@
       "Jest",
       "Enzyme",
       "Google Maps API"
-    ]
+    ],
+    "link": "http://travisjohnston.info/demo/a-cart-apart",
+    "repository": "http://github.com/tjohnst1/a-cart-apart",
+    "featured": true
   },
   {
     "id": "1",
     "name": "Makani",
     "category": "Personal Projects/Experiments",
-    "summary": "A React web app for finding new and interesting food carts in the Portland, OR metro area.",
+    "summary": "A simple weather app.",
     "technologies": [
       "React",
-      "Redux",
       "SASS",
       "Webpack",
-      "Firebase",
       "Jest",
       "Enzyme",
-      "Google Maps API"
-    ]
+      "Google Maps API",
+      "Dark Sky Weather API"
+    ],
+    "link": "http://travisjohnston.info/demo/makani",
+    "repository": "http://github.com/tjohnst1/makani",
+    "featured": true
   },
   {
     "id": "2",
     "name": "Out to Lunch",
     "category": "Personal Projects/Experiments",
-    "summary": "A React web app for finding new and interesting food carts in the Portland, OR metro area.",
+    "summary": "Helps to figure out what to eat. Mostly just an experiment with using D3.js",
     "technologies": [
-      "React",
-      "Redux",
+      "D3.js",
       "SASS",
-      "Webpack",
-      "Firebase",
-      "Jest",
-      "Enzyme",
-      "Google Maps API"
-    ]
+      "Webpack"
+    ],
+    "link": "http://travisjohnston.info/demo/out-to-lunch",
+    "repository": "http://github.com/tjohnst1/out-to-lunch",
+    "featured": true
   },
   {
     "id": "3",
     "name": "React Paint",
     "category": "Personal Projects/Experiments",
-    "summary": "A React web app for finding new and interesting food carts in the Portland, OR metro area.",
+    "summary": "MS paint, remade for the browser.",
     "technologies": [
       "React",
       "Redux",
       "SASS",
-      "Webpack",
-      "Firebase",
-      "Jest",
-      "Enzyme",
-      "Google Maps API"
-    ]
+      "Webpack"
+    ],
+    "link": "http://travisjohnston.info/demo/react-paint",
+    "repository": "http://github.com/tjohnst1/react-paint",
+    "featured": true
+  },
+  {
+    "id": "4",
+    "name": "Banfield Newsletter",
+    "category": "Email",
+    "summary": "A newsletter for Banfield pet hospitals.",
+    "technologies": [
+      "HTML",
+      "CSS"
+    ],
+    "link": "http://travisjohnston.info/demo/banfield-newsletter",
+    "repository": "http://github.com/tjohnst1/banfield-newsletter",
+    "featured": false
+  },
+  {
+    "id": "5",
+    "name": "Wacom Viper Revitalization",
+    "category": "Email",
+    "summary": "A email for selling Wacom tablets.",
+    "technologies": [
+      "HTML",
+      "CSS"
+    ],
+    "link": "http://travisjohnston.info/demo/wacom-viper",
+    "repository": "http://github.com/tjohnst1/wacom-viper",
+    "featured": false
   }
 ]

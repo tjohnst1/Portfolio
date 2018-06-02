@@ -12,12 +12,12 @@ export default ({ data }) => {
         <p className="project__summary">{ project.summary }</p>
 
         <div className="project__buttons">
-          <a className="button ghost" href="https://github.com/tjohnst1/A-Cart-Apart">Github</a>
-          <a className="button ghost" href="http://travisjohnston.info/demo/a-cart-apart">View Project</a>
+          <a className="button" href={ project.link }>View Project</a>
+          <a className="button" href={ project.repository }>Github</a>
         </div>
 
         <div className="project__metadata">
-          <h3>Technologies Used:</h3>
+          <h3>Programming Languages and/or Libraries Used:</h3>
           <p>{ project.technologies.join(", ") }</p>
         </div>
       </section>
@@ -26,13 +26,19 @@ export default ({ data }) => {
 }
 
 export const query = graphql`
-  query FindPostQuery($id: String) {
-  	projectsJson(id: { eq: $id }) {
+  query FindPostQuery($projectId: String) {
+  	projectsJson(id: { eq: $projectId }) {
+      id
       name
       category
       summary
       category
       technologies
+      link
+      repository
+      fields {
+        slug
+      }
   	}
   }
 `;

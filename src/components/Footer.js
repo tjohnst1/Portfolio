@@ -3,7 +3,7 @@ import '../scss/footer.scss'
 
 const Footer = () => {
   return (
-    <footer className="footer container">
+    <footer id="contact" className="footer container">
       <h3 className="footer__subhead">Looking to start a project? <a href="#">Let&rsquo;s talk.</a></h3>
       <ul className="footer__links">
         <li><a href="https://github.com/tjohnst1">Github</a></li>

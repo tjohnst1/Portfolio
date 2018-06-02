@@ -12,8 +12,18 @@ const Header = () => {
         </div>
         <nav>
           <ul>
-            <li><a href="#">Work</a></li>
-            <li><a href="mailto: tjohnst1@gmail.com">Contact</a></li>
+            <li>
+              <Link to={{
+                pathname: '/',
+                hash: '#featured-work',
+              }}>Work</Link>
+            </li>
+            <li>
+              <Link to={{
+                pathname: '/',
+                hash: '#contact',
+              }}>Contact</Link>
+            </li>
           </ul>
         </nav>
       </div>

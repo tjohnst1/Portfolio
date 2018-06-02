@@ -25,6 +25,14 @@
   margin-top: 2rem;
 }
 
+h3 {
+  font-size: 1.4rem;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
 .project__buttons {
   margin-top: 2rem;
 
@@ -39,12 +47,14 @@
 
 .button {
   padding: 1rem 2rem;
-  border: 2px solid $red;
   background: none;
   font-size: 1.4rem;
   display: inline-block;
+  color: white !important;
+  background: $red;
+  transition: background 300ms;
 
   &:hover {
-    border: 2px solid $red--hover;
+    background: $red--hover;
   }
 }

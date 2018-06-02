@@ -3,13 +3,18 @@ import Link from 'gatsby-link';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
 import FeaturedWork from '../components/FeaturedWork';
+import AdditionalWork from '../components/AdditionalWork';
 
 export default ({ data }) => {
-  const projects = data.allProjectsJson.edges;
+  const featuredProjects = data.allProjectsJson.edges.filter(project => project.node.featured);
+  const additionalProjects = data.allProjectsJson.edges.filter(project => !project.node.featured);
+
+  console.log('featuredProjects', featuredProjects)
   return (
     <div>
       <Hero />
-      <FeaturedWork projects={projects} />
+      <FeaturedWork projects={featuredProjects} />
+      <AdditionalWork projects={additionalProjects} />
       <Footer />
     </div>
   )
@@ -25,6 +30,10 @@ export const query = graphql`
           summary
           category
           technologies
+          fields {
+            slug
+          }
+          featured
         }
   	  }
   	}
