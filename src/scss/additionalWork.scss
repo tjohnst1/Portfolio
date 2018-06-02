@@ -1,0 +1,50 @@
+@import 'vars';
+
+.additional-work {
+  display: flex;
+  margin-top: 4rem;
+  padding: 2rem 0;
+}
+
+.additional-work__inner {
+  width: 100%;
+}
+
+.additional-work__headline {
+  font-size: 2.4rem;
+  margin: 0 auto;
+  font-weight: 400;
+  display: block;
+  width: 95%;
+}
+
+.additional-work__item {
+  border-bottom: 1px solid $lt-grey;
+  transition: all 300ms;
+
+  &:hover {
+    background: $red;
+    border-bottom: 1px solid $red;
+
+    .additional-work__item-inner {
+      color: white;
+    }
+  }
+}
+
+.additional-work__item-inner {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  padding: 2rem 0;
+  color: $dk-grey;
+
+  &:visited {
+    color: inherit;
+  }
+}
+
+.additional-work__details {
+  display: flex;
+  justify-content: space-between;
+}
