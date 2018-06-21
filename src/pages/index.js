@@ -8,14 +8,12 @@ import AdditionalWork from '../components/AdditionalWork';
 export default ({ data }) => {
   const featuredProjects = data.allProjectsJson.edges.filter(project => project.node.featured);
   const additionalProjects = data.allProjectsJson.edges.filter(project => !project.node.featured);
-
-  console.log('featuredProjects', featuredProjects)
+  const images = data.allFile.edges;
   return (
-    <div>
+    <div className="index">
       <Hero />
-      <FeaturedWork projects={featuredProjects} />
+      <FeaturedWork projects={featuredProjects} images={images}/>
       <AdditionalWork projects={additionalProjects} />
-      <Footer />
     </div>
   )
 }
@@ -37,5 +35,17 @@ export const query = graphql`
         }
   	  }
   	}
+    allFile(filter: {sourceInstanceName: {eq: "images"}}) {
+      edges {
+        node {
+          childImageSharp {
+            sizes(maxWidth: 1200, quality: 90) {
+              originalName
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
+      }
+    }
   }
 `;

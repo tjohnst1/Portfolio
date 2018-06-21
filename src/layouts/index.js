@@ -3,11 +3,12 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/Header.js'
+import Footer from '../components/Footer.js'
 import '../scss/normalize.scss';
 import '../scss/defaults.scss';
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <div className="layout">
     <Helmet
       title="Gatsby Default Starter"
       meta={[
@@ -16,9 +17,8 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Header />
-    <main>
-      {children()}
-    </main>
+    {children()}
+    <Footer />
   </div>
 )
 

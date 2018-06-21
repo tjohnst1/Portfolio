@@ -5,6 +5,8 @@
 html {
   box-sizing: border-box;
   font-size: 10px;
+  width: 100%;
+  width: 100vw;
 }
 
 *, *:before, *:after {
@@ -13,10 +15,21 @@ html {
 
 body {
   font-family: 'Work Sans', Helvetica, sans-serif;
-  max-width: 1200px;
-  margin: 0 auto;
   color: $dk-grey;
   font-weight: 400;
+  width: 100%;
+  background: white;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.index {
+  flex: 1;
 }
 
 a {
@@ -24,21 +37,13 @@ a {
   transition: color 300ms;
   text-decoration: none;
 
-  &:hover {
-    color: $red--hover;
-  }
-
   &:visited {
     color: $red;
-
-    &:hover {
-      color: $red--hover;
-    }
   }
 }
 
 .container {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 }
 
