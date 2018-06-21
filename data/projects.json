@@ -22,7 +22,7 @@
     "id": "1",
     "name": "Makani",
     "category": "Personal Projects/Experiments",
-    "summary": "A simple weather app.",
+    "summary": "Makani is simple weather app written using React. It utilizes the Google Maps API to generate coordinates for a given location and then feeds this to the Dark Sky weather API service to generate the relevant weather data.",
     "technologies": [
       "React",
       "SASS",
@@ -40,7 +40,7 @@
     "id": "2",
     "name": "Out to Lunch",
     "category": "Personal Projects/Experiments",
-    "summary": "Helps to figure out what to eat. Mostly just an experiment with using D3.js",
+    "summary": "If you are a little bit indecisive and/or ambivalent about where to have lunch today, this project might help you. Click the \"Spin Away\" button and recieve a random suggestion.\n\nThe seed data used to populate the spinner is a small sampling of restaurants near the Trendline Interactive (Portland) office, but can be customized by the user according to their own preferences.",
     "technologies": [
       "D3.js",
       "SASS",
@@ -54,7 +54,7 @@
     "id": "3",
     "name": "React Paint",
     "category": "Personal Projects/Experiments",
-    "summary": "MS paint, remade for the browser.",
+    "summary": "React Paint is exactly what it sounds like: a painting app build using React. It is partially modeled off of MS paint from yesteryear and was mostly just constructed to find out more about how the canvas element can be used.",
     "technologies": [
       "React",
       "Redux",
@@ -67,9 +67,37 @@
   },
   {
     "id": "4",
+    "name": "AARP The Girlfriend Birthday Quiz",
+    "category": "Landing Page",
+    "summary": "This landing page is just one part of a larger marketing campaign developed for AARP to promote social engagement among \"The Girlfriend\" subscribers.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "Javascript"
+    ],
+    "link": "https://cp.email.aarp.org/gfbd_index",
+    "repository": "",
+    "featured": false
+  },
+  {
+    "id": "5",
+    "name": "AARP The Girlfriend Newsletter Form",
+    "category": "Landing Page",
+    "summary": "A simple sign up form for users to sign up to recieve \"The Girlfriend\" Newsletter from AARP.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "Javascript"
+    ],
+    "link": "https://cp.email.aarp.org/gfns",
+    "repository": "",
+    "featured": false
+  },
+  {
+    "id": "6",
     "name": "Banfield Newsletter",
     "category": "Email",
-    "summary": "A newsletter for Banfield pet hospitals.",
+    "summary": "An email newsletter for Banfield pet hospitals. Features an interactive quiz that utilizes nothing but HTML and CSS to function.",
     "technologies": [
       "HTML",
       "CSS"
@@ -79,10 +107,10 @@
     "featured": false
   },
   {
-    "id": "5",
+    "id": "7",
     "name": "Wacom Viper Revitalization",
     "category": "Email",
-    "summary": "A email for selling Wacom tablets.",
+    "summary": "A HTML/CSS email for selling Wacom tablets.",
     "technologies": [
       "HTML",
       "CSS"

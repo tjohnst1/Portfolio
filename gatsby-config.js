@@ -12,8 +12,17 @@ module.exports = {
         path: `${__dirname}/data`,
       }
     },
+    {
+      resolve: 'gatsby-source-filesystem' ,
+      options: {
+        name: 'images',
+        path: `${__dirname}/src/images`,
+      }
+    },
     'gatsby-transformer-json',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp'
   ],
 };
