@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import monogram from '../../public/static/img/monogram.svg';
+import { scrollTo } from '../utilities';
 import '../scss/header.scss';
 
 const Header = () => {
@@ -12,18 +13,8 @@ const Header = () => {
         </div>
         <nav>
           <ul>
-            <li>
-              <Link to={{
-                pathname: '/',
-                hash: '#featured-work',
-              }}>Work</Link>
-            </li>
-            <li>
-              <Link to={{
-                pathname: '/',
-                hash: '#contact',
-              }}>Contact</Link>
-            </li>
+            <li onClick={() => scrollTo('#featured-work')}>Work</li>
+            <li onClick={() => scrollTo('#contact')}>Contact</li>
           </ul>
         </nav>
       </div>

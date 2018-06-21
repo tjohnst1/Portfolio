@@ -36,19 +36,17 @@
     text-align: center;
     width: 50%;
     justify-content: center;
+    text-decoration: none;
+    color: $md-grey;
+    transition: color 200ms ease-in-out;
+    cursor: pointer;
 
     &:first-of-type {
       padding: 0;
     }
 
-    a {
-      text-decoration: none;
-      color: $md-grey;
-      transition: color 200ms ease-in-out;
-
-      &:hover {
-        color: $red;
-      }
+    &:hover {
+      color: $red;
     }
   }
 }
