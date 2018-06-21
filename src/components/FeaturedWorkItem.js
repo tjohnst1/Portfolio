@@ -1,15 +1,19 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import Img from "gatsby-image";
 
-export default ({ project }) => {
-  console.log(project)
+import { kebabCase } from 'lodash';
+
+export default ({ project, image }) => {
   return (
     <div className="featured-work__item">
-      <div className="featured-work__item-inner">
-        <img />
-        <Link to={project.fields.slug}><h3>{project.name}</h3></Link>
-        <p>{project.category}</p>
-      </div>
+      <Link to={project.fields.slug}>
+        <div className="featured-work__item-inner">
+            <Img className="featured-work__img" sizes={image} />
+            <h3 className="featured-work__name">{project.name}</h3>
+            <p className="featured-work__category">{project.category}</p>
+        </div>
+      </Link>
     </div>
   )
 }
