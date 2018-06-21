@@ -1,18 +1,24 @@
 import React from 'react';
+import { kebabCase } from 'lodash';
 import FeaturedWorkItem from './FeaturedWorkItem';
 import '../scss/featuredWork.scss';
 
-export default ({ projects }) => {
-  const featuredItems = projects.map((obj, i) => (<FeaturedWorkItem key={i} project={obj.node} />));
+export default ({ projects, images }) => {
+  const featuredItems = projects.map((project, i) => {
+    const previewImg = images.find(image => {
+      const re = new RegExp(kebabCase(project.node.name))
+      return re.test(image.node.childImageSharp.sizes.originalName);
+    }).node.childImageSharp.sizes;
+    return (<FeaturedWorkItem key={i} project={project.node} image={previewImg}/>)}
+  );
 
   return (
-    <section id="featured-work" className="featured-work">
+    <div id="featured-work" className="featured-work">
       <div className="container">
-        <h2 className="featured-work__headline">Featured Work</h2>
         <div className="featured-work__container">
           { featuredItems }
         </div>
       </div>
-    </section>
+    </div>
   );
 }
