@@ -13,7 +13,7 @@ export default ({ data }) => {
         </div>
         <div className="project__buttons">
           <a className="button" href={ project.link }>View Project</a>
-          <a className="button" href={ project.repository }>Github</a>
+          {project.repository ? (<a className="button" href={ project.repository }>Github</a>) : null}
         </div>
       </div>
       <div className="project__metadata">
