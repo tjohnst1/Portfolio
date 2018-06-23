@@ -67,7 +67,22 @@
   },
   {
     "id": "4",
-    "name": "AARP The Girlfriend Birthday Quiz",
+    "name": "Airbnb - Master Template System",
+    "category": "Email Development/Documentation",
+    "summary": "This documentation website contains all of the HTML fragments that form the basis for the Airbnb email template system.",
+    "technologies": [
+      "PHP",
+      "HTML",
+      "CSS",
+      "Javascript"
+    ],
+    "link": "http://trendline.email/documentation/airbnb/",
+    "repository": "",
+    "featured": false
+  },
+  {
+    "id": "5",
+    "name": "AARP - The Girlfriend Birthday Quiz",
     "category": "Landing Page",
     "summary": "This landing page is just one part of a larger marketing campaign developed for AARP to promote social engagement among \"The Girlfriend\" subscribers.",
     "technologies": [
@@ -80,8 +95,8 @@
     "featured": false
   },
   {
-    "id": "5",
-    "name": "AARP The Girlfriend Newsletter Form",
+    "id": "6",
+    "name": "AARP - The Girlfriend Newsletter Form",
     "category": "Landing Page",
     "summary": "A simple sign up form for users to sign up to recieve \"The Girlfriend\" Newsletter from AARP.",
     "technologies": [
@@ -94,10 +109,10 @@
     "featured": false
   },
   {
-    "id": "6",
-    "name": "Banfield Newsletter",
-    "category": "Email",
-    "summary": "An email newsletter for Banfield pet hospitals. Features an interactive quiz that utilizes nothing but HTML and CSS to function.",
+    "id": "7",
+    "name": "Banfield Pet Hospitals - Heartworm Prevention Newsletter",
+    "category": "Email Development",
+    "summary": "A newsletter created for Banfield pet hospitals. This email features an interactive quiz that utilizes nothing but HTML and CSS to function.",
     "technologies": [
       "HTML",
       "CSS"
@@ -107,16 +122,16 @@
     "featured": false
   },
   {
-    "id": "7",
-    "name": "Wacom Viper Revitalization",
-    "category": "Email",
-    "summary": "A HTML/CSS email for selling Wacom tablets.",
+    "id": "8",
+    "name": "Wacom - Viper Revitalization Email",
+    "category": "Email Development",
+    "summary": "A interactive HTML/CSS email developed for Wacom to help educate individuals about new tablet features and product offerings.",
     "technologies": [
       "HTML",
       "CSS"
     ],
     "link": "http://travisjohnston.info/demo/wacom-viper",
-    "repository": "http://github.com/tjohnst1/wacom-viper",
+    "repository": "",
     "featured": false
   }
 ]
