@@ -6,7 +6,8 @@
 }
 
 .project__title {
-  font-size: 3.6rem;
+  font-size: 2.8rem;
+  line-height: 3.2rem;
 }
 
 .project__subhead {
@@ -56,5 +57,12 @@ p {
 
   &:hover {
     background: $red--hover;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .project__title {
+    font-size: 3.6rem;
+    line-height: 4rem;
   }
 }
