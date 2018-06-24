@@ -12,7 +12,7 @@ class TemplateWrapper extends React.Component {
   componentDidMount() {
     smoothscroll.polyfill();
   }
-  
+
   render() {
     return (
       <div className="layout">
