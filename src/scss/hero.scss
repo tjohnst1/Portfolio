@@ -4,6 +4,7 @@
   min-height: 28vh;
   display: flex;
   position: relative;
+  transition: color 300ms;
 }
 
 .hero__text {
@@ -15,7 +16,7 @@
   max-width: 90vw;
 
   & a:hover {
-    text-decoration: underline;
+    color: $red--hover;
   }
 }
 
