@@ -1,18 +1,18 @@
 @import 'vars';
 
 .hero {
-  min-height: 40vh;
+  min-height: 28vh;
   display: flex;
   position: relative;
 }
 
 .hero__text {
   font-weight: 400;
-  font-size: 4rem;
-  line-height: 5rem;
+  font-size: 2.2rem;
+  line-height: 3rem;
   padding-bottom: calc(2rem + 25px);
-  max-width: 66vw;
   align-self: center;
+  max-width: 90vw;
 
   & a:hover {
     text-decoration: underline;
@@ -22,7 +22,7 @@
 .hero__arrow {
   width: 25px;
   position: absolute;
-  left: 50%;
+  left: calc(50% - 12.5px);
   cursor: pointer;
   bottom: 2rem;
   fill: $md-grey;
@@ -32,6 +32,29 @@
     fill: $red;
     -webkit-animation: bounce 1.75s infinite;
     animation: bounce 1.75s infinite;
+  }
+}
+
+@media only screen and (min-width: 321px) {
+  .hero {
+    min-height: 25vh;
+  }
+  .hero__text {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    min-height: 40vh;
+  }
+
+  .hero__text {
+    font-size: 4rem;
+    line-height: 5rem;
+    padding-bottom: calc(2rem + 25px);
+    max-width: 66vw;
   }
 }
 
@@ -53,6 +76,7 @@
     transform: translateY(10px);
   }
 }
+
 @keyframes bounce {
   0%,
   20%,

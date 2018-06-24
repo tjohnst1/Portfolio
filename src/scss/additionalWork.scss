@@ -36,10 +36,20 @@
 }
 
 .additional-work__details {
-  display: flex;
-  justify-content: space-between;
+  display: block;
 }
 
 .additional-work__category, .additional-work__tech {
   color: $md-dk-grey;
+}
+
+.additional-work__tech {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .additional-work__details {
+    display: flex;
+    justify-content: space-between;
+  }
 }

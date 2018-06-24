@@ -1,7 +1,7 @@
 @import 'vars';
 
 .header {
-  padding: 2rem 0;
+  padding: 1rem 0;
 
   * {
     display: flex;
@@ -15,12 +15,12 @@
   }
 
   .header__logo-container {
-    width: 66%;
+    width: 33%;
     align-items: center;
   }
 
   nav {
-    width: 33%;
+    width: 66%;
     margin-left: auto;
     justify-content: center;
     align-items: center;
@@ -31,7 +31,7 @@
   }
 
   li {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 4rem;
     text-align: center;
     width: 50%;
@@ -52,6 +52,29 @@
 }
 
 .header__logo {
-  height: 6rem;
+  height: 5rem;
   max-width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    padding: 2rem 0;
+
+    nav {
+      width: 33%;
+    }
+
+    li {
+      font-size: 1.8rem;
+    }
+  }
+
+  .header__logo-container {
+    width: 66%;
+  }
+
+  .header__logo {
+    height: 6rem;
+  }
+
 }
