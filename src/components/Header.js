@@ -1,9 +1,17 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import { scrollTo } from '../utilities';
+import { navigateTo } from "gatsby-link"
 import '../scss/header.scss';
 
-const Header = () => {
+const Header = ({location}) => {
+  function scrollOrLinkTo(selector) {
+    if (location.pathname !== '/') {
+      return navigateTo(`/${selector}`);
+    }
+    return scrollTo(selector);
+  }
+
   return (
     <header className="header">
       <div className="container">
@@ -18,7 +26,7 @@ const Header = () => {
         </div>
         <nav>
           <ul>
-            <li onClick={() => scrollTo('#featured-work')}>Work</li>
+            <li onClick={() => scrollOrLinkTo('#featured-work')}>Work</li>
             <li onClick={() => scrollTo('#contact')}>Contact</li>
           </ul>
         </nav>

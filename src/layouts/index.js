@@ -23,7 +23,7 @@ class TemplateWrapper extends React.Component {
         { name: 'keywords', content: 'sample, something' },
       ]}
       />
-      <Header />
+      <Header location={this.props.location}/>
       {this.props.children()}
       <Footer />
       </div>
