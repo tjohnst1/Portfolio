@@ -1,0 +1,31 @@
+@import 'vars';
+
+.not-found {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 1rem;
+
+  h1 {
+    font-size: 3.2rem;
+    color: $dk-grey;
+  }
+
+  p {
+    font-size: 1.8rem;
+    color: $md-dk-grey;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .not-found {
+    h1 {
+      font-size: 3.6rem;
+      color: $dk-grey;
+    }
+    p {
+      font-size: 2.2rem;
+    }
+  }
+}

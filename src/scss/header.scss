@@ -41,6 +41,14 @@
     transition: color 200ms ease-in-out;
     cursor: pointer;
 
+    a {
+      color: $md-grey;
+
+      &:hover {
+        color: $red;
+      }
+    }
+
     &:first-of-type {
       padding: 0;
     }

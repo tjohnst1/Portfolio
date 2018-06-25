@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import '../scss/404.scss';
 
 const NotFoundPage = () => (
-  <div>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+  <div className="not-found">
+    <div className="container">
+      <h1>404</h1>
+      <p>Sorry, the page you are looking for was not found.</p>
+    </div>
   </div>
 )
 
