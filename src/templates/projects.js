@@ -20,10 +20,8 @@ export default ({ data }) => {
         <div>
       </div>
       <div className="project__metadata">
-        <div className="container">
-          <h3>Programming Languages and/or Libraries Used:</h3>
-          <p>{ currentProject.technologies.join(", ") }</p>
-        </div>
+        <h3>Programming Languages and/or Libraries Used:</h3>
+        <p>{ currentProject.technologies.join(", ") }</p>
       </div>
     </div>
   </div>
