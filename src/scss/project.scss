@@ -79,11 +79,11 @@ p {
   }
 }
 
-.link {
-  padding: 1rem 2rem;
+.project__next-link {
+  margin: 2rem 0 0;
+  display: inline-block;
   background: none;
   font-size: 1.4rem;
-  display: inline-block;
   color: $md-grey !important;
 
   svg {

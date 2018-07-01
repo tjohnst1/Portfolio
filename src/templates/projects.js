@@ -1,5 +1,7 @@
 import React from 'react';
+import Link from 'gatsby-link';
 import '../scss/project.scss';
+import FaChevronLeft from 'react-icons/lib/fa/chevron-left';
 import FaChevronRight from 'react-icons/lib/fa/chevron-right';
 
 export default ({ data }) => {
@@ -15,7 +17,6 @@ export default ({ data }) => {
         <div className="project__buttons">
           <a className="button" href={ currentProject.link }>View Project</a>
           {currentProject.repository ? (<a className="button" href={ currentProject.repository }>Github</a>) : null}
-          <a className="link" href={ nextProject.fields.slug }>Next Project<FaChevronRight /></a>
         </div>
         <div>
       </div>
@@ -23,6 +24,7 @@ export default ({ data }) => {
         <h3>Programming Languages and/or Libraries Used:</h3>
         <p>{ currentProject.technologies.join(", ") }</p>
       </div>
+      <Link className="project__next-link" to={ nextProject.fields.slug }>Next Project<FaChevronRight /></Link>
     </div>
   </div>
   )
