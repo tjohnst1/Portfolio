@@ -26,6 +26,10 @@
   margin-top: 2rem;
 }
 
+.project__description {
+  position: relative;
+}
+
 h3 {
   font-size: 1.4rem;
 }
@@ -53,10 +57,42 @@ p {
   display: inline-block;
   color: white !important;
   background: $red;
-  transition: background 300ms;
+  transition: all 300ms;
+  border: 2px solid $red;
+
+  &.ghost {
+    background: transparent;
+    color: $md-grey !important;
+    border: 2px solid lighten($md-grey, 20%);
+    text-decoration: underline;
+  }
 
   &:hover {
     background: $red--hover;
+    border: 2px solid $red--hover;
+
+    &.ghost {
+      background: $md-grey;
+      border: 2px solid $md-grey;
+      color: white !important;
+    }
+  }
+}
+
+.link {
+  padding: 1rem 2rem;
+  background: none;
+  font-size: 1.4rem;
+  display: inline-block;
+  color: $md-grey !important;
+
+  svg {
+    width: 8px;
+    margin-left: 5px;
+  }
+
+  &:hover {
+    color: $dk-grey !important;
   }
 }
 

@@ -37,12 +37,15 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   ).then(result => {
       const projects = result.data.allProjectsJson.edges;
 
-      projects.forEach(obj => {
+      projects.forEach((obj, i) => {
+        const nextProjectId = (i + 1 >= projects.length) ? projects[0].node.id : projects[i + 1].node.id;
+
         createPage({
           path: `/projects/${_.kebabCase(obj.node.name)}`,
           component: path.resolve(`./src/templates/projects.js`),
           context: {
             projectId: obj.node.id,
+            nextProjectId,
           },
         })
       })
