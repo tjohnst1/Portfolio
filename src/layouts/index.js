@@ -17,10 +17,10 @@ class TemplateWrapper extends React.Component {
     return (
       <div className="layout">
       <Helmet
-      title="Gatsby Default Starter"
+      title="Travis Johnston – Web Developer Portfolio"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Hello! This is the portfolio website of Travis Johnston, a web developer currently residing in beautiful Portland, OR.' },
+        { name: 'keywords', content: 'web developer, portland developer, portland front end developer' },
       ]}
       />
     <Header location={this.props.location} />

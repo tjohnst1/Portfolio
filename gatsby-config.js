@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter Blog',
+    title: 'Travis Johnston – Web Developer Portfolio',
     author: 'Travis Johnston',
-    description: 'A starter blog demonstrating what Gatsby can do.',
+    description: 'Hello! This is the portfolio website of Travis Johnston, a web developer currently residing in beautiful Portland, OR.',
   },
   plugins: [
     {
@@ -25,8 +25,26 @@ module.exports = {
         trackingId: "UA-121840732-1",
         head: false,
         anonymize: true,
-        respectDNT: true
+        respectDNT: false
       },
+    },
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: "./src/favicon.png",
+        injectHTML: true,
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          twitter: true,
+          yandex: true,
+          windows: true
+        }
+      }
     },
     'gatsby-transformer-json',
     'gatsby-plugin-react-helmet',
